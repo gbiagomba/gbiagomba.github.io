@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --color-background: 10 14 26;
+  --color-surface: 18 24 38;
+  --color-muted: 148 163 184;
+  --color-primary: 56 189 248;
+  --color-secondary: 167 139 250;
+  --color-warning: 245 158 11;
+  --color-ring: 94 234 212;
+}
+
+.theme-light {
+  color-scheme: light;
+  --color-background: 244 247 252;
+  --color-surface: 255 255 255;
+  --color-muted: 71 85 105;
+  --color-primary: 14 165 233;
+  --color-secondary: 139 92 246;
+  --color-warning: 217 119 6;
+  --color-ring: 14 165 233;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.08), transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(139, 92, 246, 0.08), transparent 25%),
+    rgb(var(--color-background));
+  color: rgb(var(--color-muted));
+  min-height: 100vh;
+}
+
+#root {
+  position: relative;
+  isolation: isolate;
+}
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.scanline::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  opacity: 0.5;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.glass {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 50px -30px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--color-primary));
+  outline-offset: 3px;
+}
+
+.section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgb(var(--color-primary));
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.65rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgb(var(--color-muted));
+  font-size: 0.85rem;
+  gap: 0.35rem;
+  transition: transform 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.25);
+}
+
+.card-hover {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 20px 60px -40px rgba(56, 189, 248, 0.4);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(56, 189, 248, 0.6),
+    rgba(139, 92, 246, 0.6)
+  );
+  opacity: 0.35;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 0.8rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  border: 2px solid rgba(56, 189, 248, 0.8);
+  background: rgba(167, 139, 250, 0.6);
+  box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.12);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  background: rgba(56, 189, 248, 0.08);
+  color: rgb(var(--color-primary));
+  font-weight: 600;
+}
+
+.glass-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  margin: 2rem 0;
+}
+
+.mask-fade {
+  position: relative;
+}
+
+.mask-fade::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(10, 14, 26, 0) 40%, rgba(10, 14, 26, 0.6) 100%);
+  mix-blend-mode: multiply;
+}
+
