@@ -10,7 +10,9 @@
     "lint": "eslint . --ext .ts,.tsx",
     "test": "vitest run",
     "format": "prettier --write .",
-    "clean": "rm -rf dist node_modules .vite"
+    "clean": "rm -rf dist .vite",
+    "clean:all": "rm -rf dist node_modules .vite",
+    "verify": "npm run lint && npm test && npm run build"
   },
   "repository": {
     "type": "git",
