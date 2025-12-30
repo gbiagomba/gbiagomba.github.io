@@ -1,3 +1,7 @@
+## v0.1.1 - 2025-12-30
+
+- Added LinkedIn profile URL to resume contact links.
+
 ## v0.1.0 - 2025-12-29
 
 - Scaffolded React + TypeScript + Vite project with TailwindCSS and Framer Motion.

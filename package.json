@@ -1,6 +1,6 @@
 {
   "name": "gbiagomba.github.io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Neo-futurist security portfolio for Gilles S. Biagomba",
   "type": "module",
   "scripts": {
@@ -30,6 +30,7 @@
   },
   "homepage": "https://gbiagomba.github.io",
   "dependencies": {
+    "@anthropic-ai/claude-code": "^2.0.76",
     "framer-motion": "^12.23.26",
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
