@@ -36,7 +36,7 @@ export const resume: Resume = {
   email: 'gilles.biagomba@live.com',
   links: [
     { label: 'GitHub', href: 'https://github.com/gbiagomba' },
-    { label: 'LinkedIn' } // URL not provided; do not guess
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/gilles-biagomba/' }
   ],
   headline: 'Application, AI/ML, Offensive Security & Cyber Security Leader',
   summary: [

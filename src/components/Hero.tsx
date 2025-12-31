@@ -84,11 +84,20 @@ export const Hero = ({ name, headline, location, summary, links, email }: HeroPr
                   <Github size={16} /> GitHub
                 </a>
               )}
-              {linkedin && (
+              {linkedin?.href ? (
+                <a
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 transition hover:-translate-y-0.5 hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
+                  href={linkedin.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              ) : linkedin ? (
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80">
                   LinkedIn (URL not provided)
                 </span>
-              )}
+              ) : null}
               <a
                 className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition hover:-translate-y-0.5"
                 href="/Gilles_Biagomba_Resume_2025v1.pdf"

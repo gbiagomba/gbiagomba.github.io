@@ -26,9 +26,13 @@ export const Footer = ({ links, email }: FooterProps) => {
                 <Github size={16} /> GitHub
               </a>
             )}
-            {linkedin && (
+            {linkedin?.href ? (
+              <a className="chip" href={linkedin.href} target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+            ) : linkedin ? (
               <span className="chip">LinkedIn (URL not provided)</span>
-            )}
+            ) : null}
           </div>
         </div>
       </div>

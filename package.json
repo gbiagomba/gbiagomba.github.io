@@ -1,6 +1,6 @@
 {
   "name": "gbiagomba.github.io",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Neo-futurist security portfolio for Gilles S. Biagomba",
   "type": "module",
   "scripts": {
@@ -10,7 +10,9 @@
     "lint": "eslint . --ext .ts,.tsx",
     "test": "vitest run",
     "format": "prettier --write .",
-    "clean": "rm -rf dist node_modules .vite"
+    "clean": "rm -rf dist .vite",
+    "clean:all": "rm -rf dist node_modules .vite",
+    "verify": "npm run lint && npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
   },
   "homepage": "https://gbiagomba.github.io",
   "dependencies": {
+    "@anthropic-ai/claude-code": "^2.0.76",
     "framer-motion": "^12.23.26",
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
