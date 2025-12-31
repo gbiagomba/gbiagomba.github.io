@@ -1,3 +1,9 @@
+## v0.2.2 - 2025-12-31
+
+- Restored original projects: Tron (GitHub - Unix/Linux security audit tool), Anubis (Rust malware analysis), and Odin (custom security automation).
+- Total of 15 curated projects: 11 GitHub repositories + 4 professional/internal projects.
+- Comprehensive security toolkit showcase from web app testing to malware analysis.
+
 ## v0.2.1 - 2025-12-31
 
 - Expanded Projects section to showcase top 10 GitHub repositories (up from 6).

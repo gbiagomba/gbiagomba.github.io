@@ -377,6 +377,20 @@ export const resume: Resume = {
       stars: 2
     },
     {
+      name: 'Tron',
+      description: 'Unix/Linux security audit tool designed to identify system misconfigurations and security weaknesses in production environments.',
+      url: 'https://github.com/gbiagomba/Tron',
+      stars: 1
+    },
+    {
+      name: 'Anubis Security Tool (Rust)',
+      description: 'Malware analysis tool using peframe and cve-bin-tool to automate security assessments for executables.'
+    },
+    {
+      name: 'Odin',
+      description: 'Custom security automation tool to enhance vulnerability detection and remediation workflows.'
+    },
+    {
       name: 'Threat Modeling the Death Star',
       description: 'BSides Bucharest 2024 talk applying STRIDE, DREAD, and PASTA threat modeling frameworks to fictional and real-world architectures.'
     },
