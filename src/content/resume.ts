@@ -24,7 +24,7 @@ export type Resume = {
       bullets: string[];
     }[];
   }[];
-  projects: { name: string; description: string }[];
+  projects: { name: string; description: string; url?: string; stars?: number }[];
   leadership: string[];
   education: { school: string; location: string; degree: string; date: string; notes?: string[] }[];
 };
@@ -317,20 +317,73 @@ export const resume: Resume = {
   ],
   projects: [
     {
-      name: 'Anubis Security Tool (Rust)',
-      description: 'Malware analysis tool using peframe and cve-bin-tool to automate security assessments for executables.'
+      name: 'Sherlock',
+      description: 'Automated web application assessment framework that expedites security testing by automating reconnaissance steps including nmap, sublist3r, and vulnerability scanning.',
+      url: 'https://github.com/gbiagomba/Sherlock',
+      stars: 86
     },
     {
-      name: 'AI Model Security Research',
-      description: 'Research into adversarial ML attacks, model poisoning, and secure AI model deployment strategies.'
+      name: 'Security-Tools',
+      description: 'Comprehensive collection of security automation scripts for IT security administration, from validating findings to performing automated attacks and assessments.',
+      url: 'https://github.com/gbiagomba/Security-Tools',
+      stars: 21
+    },
+    {
+      name: 'GraveDigger',
+      description: 'Linux system forensics tool that searches for files of interest, then compresses and encrypts them for secure exfiltration and analysis.',
+      url: 'https://github.com/gbiagomba/GraveDigger',
+      stars: 5
+    },
+    {
+      name: 'Naughty_Tarbawlz',
+      description: 'Collection of admin and malicious binaries designed for antivirus and EDR acceptance testing to validate security detection capabilities.',
+      url: 'https://github.com/gbiagomba/Naughty_Tarbawlz',
+      stars: 5
+    },
+    {
+      name: 'Terminus',
+      description: 'HTTP boundary testing tool that identifies access control security misconfigurations by systematically testing authorization boundaries.',
+      url: 'https://github.com/gbiagomba/Terminus',
+      stars: 3
+    },
+    {
+      name: 'Hephaestus',
+      description: 'Git administration automation toolkit with tools for managing multiple repositories, batch operations, and repository health monitoring.',
+      url: 'https://github.com/gbiagomba/Hephaestus',
+      stars: 3
+    },
+    {
+      name: 'Nmap_Scripts',
+      description: 'Automated host and port discovery toolkit designed to streamline the reconnaissance phase of security assessments.',
+      url: 'https://github.com/gbiagomba/Nmap_Scripts',
+      stars: 3
+    },
+    {
+      name: 'superficial-duck',
+      description: 'Windows privilege escalation assessment tool that performs comprehensive system checks to identify potential privilege escalation vectors.',
+      url: 'https://github.com/gbiagomba/superficial-duck',
+      stars: 3
+    },
+    {
+      name: 'OWASP-Janus',
+      description: 'HTTP request fuzzing tool that tests various HTTP request types and methods against web servers to identify security vulnerabilities.',
+      url: 'https://github.com/gbiagomba/OWASP-Janus',
+      stars: 2
+    },
+    {
+      name: 'Binspector',
+      description: 'Binary analysis tool designed to inspect executables for indicators of compromise (IOCs) and security threats.',
+      url: 'https://github.com/gbiagomba/Binspector',
+      stars: 2
     },
     {
       name: 'Threat Modeling the Death Star',
-      description: 'BSides Bucharest 2024 talk applying STRIDE, DREAD, and PASTA to fictional and real-world architectures.'
+      description: 'BSides Bucharest 2024 talk applying STRIDE, DREAD, and PASTA threat modeling frameworks to fictional and real-world architectures.'
     },
-    { name: 'Odin', description: 'Custom security automation tool to enhance vulnerability detection and remediation workflows.' },
-    { name: 'Sherlock', description: 'Custom security automation tool to enhance vulnerability detection and remediation workflows.' },
-    { name: 'Tron', description: 'Custom security automation tool to enhance vulnerability detection and remediation workflows.' }
+    {
+      name: 'AI Model Security Research',
+      description: 'Research into adversarial ML attacks, model poisoning, and secure AI model deployment strategies for production systems.'
+    }
   ],
   leadership: [
     'Active mentor guiding junior engineers in red teaming, penetration testing, and AI security.',
