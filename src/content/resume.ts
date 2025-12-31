@@ -335,6 +335,12 @@ export const resume: Resume = {
       stars: 5
     },
     {
+      name: 'Naughty_Tarbawlz',
+      description: 'Collection of admin and malicious binaries designed for antivirus and EDR acceptance testing to validate security detection capabilities.',
+      url: 'https://github.com/gbiagomba/Naughty_Tarbawlz',
+      stars: 5
+    },
+    {
       name: 'Terminus',
       description: 'HTTP boundary testing tool that identifies access control security misconfigurations by systematically testing authorization boundaries.',
       url: 'https://github.com/gbiagomba/Terminus',
@@ -347,9 +353,27 @@ export const resume: Resume = {
       stars: 3
     },
     {
+      name: 'Nmap_Scripts',
+      description: 'Automated host and port discovery toolkit designed to streamline the reconnaissance phase of security assessments.',
+      url: 'https://github.com/gbiagomba/Nmap_Scripts',
+      stars: 3
+    },
+    {
+      name: 'superficial-duck',
+      description: 'Windows privilege escalation assessment tool that performs comprehensive system checks to identify potential privilege escalation vectors.',
+      url: 'https://github.com/gbiagomba/superficial-duck',
+      stars: 3
+    },
+    {
       name: 'OWASP-Janus',
       description: 'HTTP request fuzzing tool that tests various HTTP request types and methods against web servers to identify security vulnerabilities.',
       url: 'https://github.com/gbiagomba/OWASP-Janus',
+      stars: 2
+    },
+    {
+      name: 'Binspector',
+      description: 'Binary analysis tool designed to inspect executables for indicators of compromise (IOCs) and security threats.',
+      url: 'https://github.com/gbiagomba/Binspector',
       stars: 2
     },
     {
