@@ -1,3 +1,10 @@
+## v0.2.0 - 2025-12-31
+
+- Enhanced Projects section with live GitHub repository integration featuring clickable links and star counts.
+- Showcasing top 6 GitHub repositories by popularity: Sherlock (86 stars), Security-Tools (21 stars), GraveDigger (5 stars), Terminus (3 stars), Hephaestus (3 stars), and OWASP-Janus (2 stars).
+- Added ExternalLink icons and Star badges to Projects component for better visual indication of GitHub projects.
+- Extended Resume type definition to support optional `url` and `stars` fields for project metadata.
+
 ## v0.1.2 - 2025-12-30
 
 - Fixed GitHub Actions workflows to use Node.js 20 instead of invalid "lts" specifier.
