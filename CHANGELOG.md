@@ -1,3 +1,11 @@
+## v0.5.0 - 2026-01-02
+
+- Added automatic OS theme detection using prefers-color-scheme media query.
+- Portfolio now defaults to user's system theme preference (light or dark).
+- Theme automatically updates when OS theme changes (unless manually overridden).
+- Manual theme toggle still works and overrides automatic detection.
+- Improved user experience by respecting system-level accessibility preferences.
+
 ## v0.4.0 - 2026-01-02
 
 - Added profile image (Darth Revan from KOTOR Remake) to navbar icon next to name.
