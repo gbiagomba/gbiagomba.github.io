@@ -1,3 +1,12 @@
+## v0.4.0 - 2026-01-02
+
+- Added profile image (Darth Revan from KOTOR Remake) to navbar icon next to name.
+- Fixed light mode text color issues - text is now readable with proper contrast in both themes.
+- Implemented theme-aware CSS variables for foreground colors (text and borders).
+- Added CSS utility layer overrides to make white text colors adapt to light mode.
+- Profile image displays as circular avatar with border and shadow effects.
+- Improved visual consistency across dark and light themes.
+
 ## v0.3.1 - 2026-01-02
 
 - Fixed navbar overflow and scrollbar issues on smaller screens.

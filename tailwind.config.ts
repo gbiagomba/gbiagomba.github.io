@@ -11,7 +11,9 @@ const config: Config = {
         primary: 'rgb(var(--color-primary) / <alpha-value>)',
         secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
         warning: 'rgb(var(--color-warning) / <alpha-value>)',
-        ring: 'rgb(var(--color-ring) / <alpha-value>)'
+        ring: 'rgb(var(--color-ring) / <alpha-value>)',
+        foreground: 'rgb(var(--color-foreground) / <alpha-value>)',
+        'foreground-muted': 'rgb(var(--color-foreground-muted) / <alpha-value>)'
       },
       fontFamily: {
         sans: ['Inter', 'Space Grotesk', 'system-ui', '-apple-system', 'sans-serif'],

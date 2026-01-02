@@ -13,6 +13,8 @@
   --color-secondary: 167 139 250;
   --color-warning: 245 158 11;
   --color-ring: 94 234 212;
+  --color-foreground: 255 255 255;
+  --color-foreground-muted: 203 213 225;
 }
 
 .theme-light {
@@ -24,6 +26,8 @@
   --color-secondary: 139 92 246;
   --color-warning: 217 119 6;
   --color-ring: 14 165 233;
+  --color-foreground: 15 23 42;
+  --color-foreground-muted: 71 85 105;
 }
 
 * {
@@ -189,5 +193,41 @@ a {
   pointer-events: none;
   background: linear-gradient(180deg, rgba(10, 14, 26, 0) 40%, rgba(10, 14, 26, 0.6) 100%);
   mix-blend-mode: multiply;
+}
+
+@layer utilities {
+  .theme-light .text-white {
+    color: rgb(var(--color-foreground));
+  }
+  .theme-light .text-white\/70 {
+    color: rgb(var(--color-foreground) / 0.7);
+  }
+  .theme-light .text-white\/80 {
+    color: rgb(var(--color-foreground) / 0.8);
+  }
+  .theme-light .text-white\/60 {
+    color: rgb(var(--color-foreground) / 0.6);
+  }
+  .theme-light .border-white\/10 {
+    border-color: rgb(var(--color-foreground) / 0.15);
+  }
+  .theme-light .border-white\/5 {
+    border-color: rgb(var(--color-foreground) / 0.1);
+  }
+  .theme-light .bg-white\/5 {
+    background-color: rgb(var(--color-background) / 0.5);
+  }
+  .theme-light .bg-white\/10 {
+    background-color: rgb(var(--color-background) / 0.3);
+  }
+  .theme-light .from-black\/60 {
+    --tw-gradient-from: rgb(var(--color-surface) / 0.95);
+  }
+  .theme-light .via-black\/40 {
+    --tw-gradient-to: rgb(var(--color-surface) / 0.9);
+  }
+  .theme-light .to-transparent {
+    --tw-gradient-to: transparent;
+  }
 }
 

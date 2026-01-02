@@ -41,7 +41,11 @@ export const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-white/5 bg-gradient-to-b from-black/60 via-black/40 to-transparent backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-4 py-3 text-sm uppercase tracking-[0.12em] text-white">
         <div className="flex items-center gap-2 font-semibold sm:gap-3">
-          <div className="h-8 w-8 rounded-full border border-primary/40 bg-primary/10 shadow-glow sm:h-10 sm:w-10" />
+          <img
+            src="/img/KOTOR_Remake_Darth_Revan.jpg"
+            alt="Gilles S. Biagomba"
+            className="h-8 w-8 rounded-full border border-primary/40 object-cover shadow-glow sm:h-10 sm:w-10"
+          />
           <span className="text-xs sm:text-sm">Gilles S. Biagomba</span>
         </div>
         <nav
