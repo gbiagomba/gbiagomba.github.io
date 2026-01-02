@@ -8,3 +8,4 @@ tmp/
 .DS_Store
 .env.local
 site-dist.zip
+.claude/

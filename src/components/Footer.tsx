@@ -1,4 +1,4 @@
-import { Github, Mail } from 'lucide-react';
+import { Calendar, Github, Mail } from 'lucide-react';
 import { Resume } from '../content/resume';
 
 type FooterProps = Pick<Resume, 'links' | 'email'>;
@@ -6,6 +6,7 @@ type FooterProps = Pick<Resume, 'links' | 'email'>;
 export const Footer = ({ links, email }: FooterProps) => {
   const github = links.find((link) => link.label.toLowerCase() === 'github');
   const linkedin = links.find((link) => link.label.toLowerCase() === 'linkedin');
+  const calendly = links.find((link) => link.label.toLowerCase() === 'calendly');
 
   return (
     <footer id="contact" className="relative px-4 pb-12 pt-8">
@@ -33,6 +34,11 @@ export const Footer = ({ links, email }: FooterProps) => {
             ) : linkedin ? (
               <span className="chip">LinkedIn (URL not provided)</span>
             ) : null}
+            {calendly?.href && (
+              <a className="chip" href={calendly.href} target="_blank" rel="noreferrer">
+                <Calendar size={16} /> Schedule
+              </a>
+            )}
           </div>
         </div>
       </div>

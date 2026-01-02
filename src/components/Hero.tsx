@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDownRight, Download, Github, Mail, MapPin } from 'lucide-react';
+import { ArrowDownRight, Calendar, Download, Github, Mail, MapPin } from 'lucide-react';
 import { Resume } from '../content/resume';
 
 type HeroProps = Pick<Resume, 'name' | 'headline' | 'location' | 'summary' | 'links' | 'email'>;
@@ -7,6 +7,7 @@ type HeroProps = Pick<Resume, 'name' | 'headline' | 'location' | 'summary' | 'li
 export const Hero = ({ name, headline, location, summary, links, email }: HeroProps) => {
   const githubLink = links.find((link) => link.label.toLowerCase() === 'github')?.href;
   const linkedin = links.find((link) => link.label.toLowerCase() === 'linkedin');
+  const calendly = links.find((link) => link.label.toLowerCase() === 'calendly');
 
   return (
     <section id="hero" className="relative overflow-hidden px-4 pb-16 pt-12">
@@ -98,6 +99,16 @@ export const Hero = ({ name, headline, location, summary, links, email }: HeroPr
                   LinkedIn (URL not provided)
                 </span>
               ) : null}
+              {calendly?.href && (
+                <a
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 transition hover:-translate-y-0.5 hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
+                  href={calendly.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Calendar size={16} /> Schedule
+                </a>
+              )}
               <a
                 className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition hover:-translate-y-0.5"
                 href="/Gilles_Biagomba_Resume_2025v1.pdf"

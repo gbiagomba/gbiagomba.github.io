@@ -1,3 +1,9 @@
+## v0.3.0 - 2026-01-02
+
+- Added Calendly scheduling integration to Hero and Footer sections.
+- Users can now easily schedule meetings via the "Schedule" button powered by https://calendly.com/gbiagomba.
+- Enhanced contact options with calendar icon and seamless scheduling experience.
+
 ## v0.2.2 - 2025-12-31
 
 - Restored original projects: Tron (GitHub - Unix/Linux security audit tool), Anubis (Rust malware analysis), and Odin (custom security automation).
