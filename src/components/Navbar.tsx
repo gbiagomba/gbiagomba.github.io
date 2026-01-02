@@ -39,20 +39,20 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-gradient-to-b from-black/60 via-black/40 to-transparent backdrop-blur-xl">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 text-sm uppercase tracking-[0.12em] text-white">
-        <div className="flex items-center gap-3 font-semibold">
-          <div className="h-10 w-10 rounded-full border border-primary/40 bg-primary/10 shadow-glow" />
-          <span>Gilles S. Biagomba</span>
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-4 py-3 text-sm uppercase tracking-[0.12em] text-white">
+        <div className="flex items-center gap-2 font-semibold sm:gap-3">
+          <div className="h-8 w-8 rounded-full border border-primary/40 bg-primary/10 shadow-glow sm:h-10 sm:w-10" />
+          <span className="text-xs sm:text-sm">Gilles S. Biagomba</span>
         </div>
         <nav
           aria-label="Primary"
-          className="flex items-center gap-3 overflow-x-auto text-xs sm:text-sm md:gap-4"
+          className="flex flex-wrap items-center justify-center gap-2 text-xs sm:gap-3 sm:text-sm"
         >
           {sections.map((section) => (
             <a
               key={section.id}
               href={`#${section.id}`}
-              className={`relative px-2 py-1 transition ${
+              className={`relative whitespace-nowrap px-1.5 py-1 transition sm:px-2 ${
                 active === section.id ? 'text-primary' : 'text-white/70 hover:text-white'
               }`}
             >
@@ -63,7 +63,7 @@ export const Navbar = () => {
             </a>
           ))}
         </nav>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <ThemeToggle />
         </div>
       </div>

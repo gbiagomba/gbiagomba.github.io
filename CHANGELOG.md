@@ -1,3 +1,11 @@
+## v0.3.1 - 2026-01-02
+
+- Fixed navbar overflow and scrollbar issues on smaller screens.
+- Removed horizontal scrollbar by eliminating overflow-x-auto from navigation.
+- Made navbar fully responsive with flex-wrap for multi-line layout when needed.
+- Optimized spacing and sizing for mobile devices (smaller logo, tighter gaps).
+- All navigation items now visible without scrolling.
+
 ## v0.3.0 - 2026-01-02
 
 - Added Calendly scheduling integration to Hero and Footer sections.
